@@ -20,13 +20,14 @@
   gtag('js', new Date());
   gtag('config', 'G-GWKBLT9BGN');
 </script>
+
 <style>
-ul{
+ul.menu{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: block;
+
 }
-li{
+li.menu{
   background-color: lightblue; 
   float: left;
   margin: 0;
@@ -53,11 +54,11 @@ li#selected {
 <h1 style="color: red;"> My Zoo Webpage</h1>
 
 <div> 
-<ul>
-  <li> Elephant</li>
-  <li>Giraff</li>
-  <li id="selected">Tiger</li>
-  <li>Lion</li>
+<ul class="menu">
+  <li class="menu"> Elephant</li>
+  <li class="menu">Giraff</li>
+  <li class="menu">Tiger</li>
+  <li class="menu">Lion</li>
 </ul>
 </div>
 
@@ -65,7 +66,7 @@ li#selected {
 <div>
 <h2>Names of Giraffs</h2>
 <ul>
-  <li>Marty</li>
+  <li><a href="elephant.html">Marty</a> the Giraff</li>
   <li>Steve</li>
   <li>George</li>
 </ul>
