@@ -1,17 +1,19 @@
 
 
 <html>
+  <!doctype html>
 <!-- non visible "stuff" on the page is inside the head tag -->
 <head>
-  <title>CS40</title>
+  <title>Zoologist</title>
     <!-- You can use open graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="https://abedoya-norena.github.io/" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="CS40" />
-  <meta property="og:description"   content="This is for an assigment I did for CS40 class" />
+  <meta property="og:title"         content="Zoologist" />
+  <meta property="og:description"   content="Animal encyclopedia site with pages for elephants, giraffes, and tigers." />
   <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> 
 
+  
 <!--Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWKBLT9BGN"></script>
 <script>
@@ -21,57 +23,52 @@
   gtag('config', 'G-GWKBLT9BGN');
 </script>
 
-<style>
-ul.menu{
-  list-style-type: none;
-  display: block;
-
-}
-li.menu{
-  background-color: lightblue; 
-  float: left;
-  margin: 0;
-  padding: 10;
-
-}
-li#selected {
-  background-color: blue;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 
 <!-- all visible "stuff" on the page is inside the body tag -->
 <body>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
 
-  <!-- Your like button code -->
-<div class="fb-like" data-href="https://abedoya-norena.github.io/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
-
-
-<h1 style="color: red;"> My Zoo Webpage</h1>
+<h1 style="color: burlywood;">Zoologist</h1>
 
 <div> 
 <ul class="menu">
-  <li class="menu"> Elephant</li>
-  <li class="menu">Giraff</li>
-  <li class="menu">Tiger</li>
-  <li class="menu">Lion</li>
+  <li class="menu" id="current"><a href="index.html">Home</a></li>
+  <li class="menu"><a href="elephant.html">Elephant</a></li>
+  <li class="menu"><a href="Giraff.html">Giraffe</a></li>
+  <li class="menu"><a href="tiger.html">Tiger</a></li>
 </ul>
 </div>
 
 
-<div>
-<h2>Names of Giraffs</h2>
-<ul>
-  <li><a href="elephant.html">Marty</a> the Giraff</li>
-  <li>Steve</li>
-  <li>George</li>
-</ul>
+<h2>Animal Overview</h2>
 
-</div>
+<table>
+  <tr>
+    <th>Animal</th>
+    <th>Habitat</th>
+    <th>Diet</th>
+  </tr>
+  <tr>
+    <td>Elephant</td>
+    <td>Savanna</td>
+    <td>Herbivore</td>
+  </tr>
+  <tr>
+    <td>Giraffe</td>
+    <td>Grassland</td>
+    <td>Herbivore</td>
+  </tr>
+</table>
+
+<p>
+  Follow the course page: <a href="https://github.com/mikeizbicki/cmc-csci040">cmc-csci040</a>.
+  Follow Mike Izbicki: <a href="https://izbicki.me">izbicki.me</a>.
+</p>
+<p>Check out Bryce's page <a href="http://brycekage.github.io/">brycekage.github.io</a>.</p>
+
+<p>Check out Ryan's page <a href="https://ryankim8.github.io/">ryankim8.github.io</a>.</p>
 
 <!--This is the liscense-->
 <footer><a href="https://github.com/abedoya-norena/abedoya-norena.github.io">CSI40</a> by <a href="https://github.com/abedoya-norena">Alejandro</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></footer>
